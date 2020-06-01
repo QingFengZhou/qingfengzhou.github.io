@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>mac hexo+github 搭建博客 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="install node.jsbrew install node  &#x2F; https:&#x2F;&#x2F;nodejs.org&#x2F;en&#x2F;download&#x2F; install hexonpm install -g hexo-cli 指定目录 并初始化mkdir &#x2F;Users&#x2F;**&#x2F;gitblog&#x2F;conthexo init(可能出现问题，找不到或无法加载主类： nmp install; hexo s ) 本地运行hexo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="mac hexo+github 搭建博客">
+<meta property="og:url" content="http://yoursite.com/2020/06/01/tools/hexo/hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="install node.jsbrew install node  &#x2F; https:&#x2F;&#x2F;nodejs.org&#x2F;en&#x2F;download&#x2F; install hexonpm install -g hexo-cli 指定目录 并初始化mkdir &#x2F;Users&#x2F;**&#x2F;gitblog&#x2F;conthexo init(可能出现问题，找不到或无法加载主类： nmp install; hexo s ) 本地运行hexo">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-06-01T15:12:42.000Z">
+<meta property="article:modified_time" content="2020-06-01T15:34:41.364Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-tools/hexo/hexo搭建博客" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/06/01/tools/hexo/hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" class="article-date">
+  <time datetime="2020-06-01T15:12:42.000Z" itemprop="datePublished">2020-06-01</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/tools-hexo/">tools/hexo/</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      mac hexo+github 搭建博客
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+
+<!-- Table of Contents -->
+
+  <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#install-node-js"><span class="toc-number">1.</span> <span class="toc-text">install node.js</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#install-hexo"><span class="toc-number">2.</span> <span class="toc-text">install hexo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#指定目录-并初始化"><span class="toc-number">3.</span> <span class="toc-text">指定目录 并初始化</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#本地运行"><span class="toc-number">4.</span> <span class="toc-text">本地运行</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#部署到github"><span class="toc-number">5.</span> <span class="toc-text">部署到github</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#发布一篇博客"><span class="toc-number">6.</span> <span class="toc-text">发布一篇博客</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#其他问题"><span class="toc-number">7.</span> <span class="toc-text">其他问题</span></a></li></ol>
+  </div>
+
+
+        <h2 id="install-node-js"><a href="#install-node-js" class="headerlink" title="install node.js"></a>install node.js</h2><p>brew install node  / <a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">https://nodejs.org/en/download/</a></p>
+<h2 id="install-hexo"><a href="#install-hexo" class="headerlink" title="install hexo"></a>install hexo</h2><p>npm install -g hexo-cli</p>
+<h2 id="指定目录-并初始化"><a href="#指定目录-并初始化" class="headerlink" title="指定目录 并初始化"></a>指定目录 并初始化</h2><p>mkdir /Users/**/gitblog/cont<br>hexo init<br>(可能出现问题，找不到或无法加载主类： nmp install; hexo s )</p>
+<h2 id="本地运行"><a href="#本地运行" class="headerlink" title="本地运行"></a>本地运行</h2><p>hexo s(打开localhost:4040,查看效果)</p>
+<h2 id="部署到github"><a href="#部署到github" class="headerlink" title="部署到github"></a>部署到github</h2><p><strong>(1)</strong><br>新建仓库  xyz.github.io（xyz为github用户名）</p>
+<p><strong>(2)</strong><br>修改目录配置文件 _congif.yml(xyz替换为github用户名)</p>
+<p>deploy:<br>  type: git<br>  repo: <a href="https://github.com/xyz/xyz.github.io.git" target="_blank" rel="noopener">https://github.com/xyz/xyz.github.io.git</a><br>  branch: master</p>
+<p><strong>(3)</strong><br>npm install hexo-deployer-git –save<br>hexo clean<br>hexo deploy</p>
+<p><strong>(4)</strong><br><a href="https://xyz.github.io/" target="_blank" rel="noopener">https://xyz.github.io/</a></p>
+<h2 id="发布一篇博客"><a href="#发布一篇博客" class="headerlink" title="发布一篇博客"></a>发布一篇博客</h2><p><strong>(1)</strong><br>hexo new  ‘HBase概览’  -p  nosql/hbase/HBase概览</p>
+<p><strong>(2)</strong><br>source/_posts/nosql/hbase/目录下找到刚才建立的 HBase概览.md文件, 进行编辑<br>title: Hello post #文章标题<br>date: 2014-08-05 11:15:00 #发表时间<br>categories: #分类<br>toc: true<br>tags: #标签，多个标签时可以用[标签1,标签2]的方式，或者”- 标签“的方式每行一个</p>
+<p><strong>(3)</strong><br>编辑完文章后依次执行hexo g和hexo s,然后访问localhost:4000来预览效果</p>
+<p><strong>(4)</strong><br>没有问题了以后，执行hexo d来同步到GitHub</p>
+<h2 id="其他问题"><a href="#其他问题" class="headerlink" title="其他问题"></a>其他问题</h2><p><strong>(1)</strong><br>ssh免密码登录配置</p>
+<p><strong>(2)</strong><br>更换主题：<a href="https://hexo.io/themes/" target="_blank" rel="noopener">https://hexo.io/themes/</a> 下载，安装，下载项目至博客项目下的themes目录中,并在博客配置文件_config.yml中指定使用该主题</p>
+<p><strong>(3)</strong><br>博客图片显示问题 <a href="https://chiselee.cn/2020/02/04/HexoNotShowpic/" target="_blank" rel="noopener">https://chiselee.cn/2020/02/04/HexoNotShowpic/</a></p>
+<p><strong>(4)</strong><br>文章目录显示问题<a href="http://kuangqi.me/tricks/enable-table-of-contents-on-hexo/" target="_blank" rel="noopener">http://kuangqi.me/tricks/enable-table-of-contents-on-hexo/</a></p>
+<p><strong>(5)</strong><br>hexo使用<a href="http://ijiaober.github.io/2014/08/04/hexo/hexo-03/" target="_blank" rel="noopener">http://ijiaober.github.io/2014/08/04/hexo/hexo-03/</a></p>
+<p><strong>(6)</strong><br>中文文档：<a href="https://hexo.io/zh-cn/docs/index.html" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/index.html</a></p>
+<p><strong>(7)</strong><br>官方文档：<a href="https://hexo.io/" target="_blank" rel="noopener">https://hexo.io/</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/06/01/tools/hexo/hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" data-id="ckawnjlyu0000hx9a5g177gaw" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2020/06/01/nosql/cassandra/testPhoto/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">testPhoto</div>
+    </a>
+  
+</nav>
+
+  
+
+
+
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/nosql-cassandra/">nosql/cassandra/</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/nosql-hbase/">nosql/hbase/</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/tools-hexo/">tools/hexo/</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/06/">June 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">May 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/06/01/tools/hexo/hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">mac hexo+github 搭建博客</a>
+          </li>
+        
+          <li>
+            <a href="/2020/06/01/nosql/cassandra/testPhoto/">testPhoto</a>
+          </li>
+        
+          <li>
+            <a href="/2020/06/01/nosql/cassandra/cassandra%E6%80%BB%E7%BB%93/">cassandra总结</a>
+          </li>
+        
+          <li>
+            <a href="/2020/05/31/nosql/hbase/HBase%E6%A6%82%E8%A7%88/">HBase概览</a>
+          </li>
+        
+          <li>
+            <a href="/2020/05/31/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
